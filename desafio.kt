@@ -9,10 +9,6 @@ class Usuario(
 ) {
     private val formacoesMatriculadas = mutableListOf<Formacao>()
 
-    override fun toString(): String {
-        return "Usuário: [Nome: $nome, Email: $email, Data Nascimento: $dataNascimento]"
-    }
-
     fun adicionarFormacao(formacao: Formacao) {
         formacoesMatriculadas.add(formacao)
     }
